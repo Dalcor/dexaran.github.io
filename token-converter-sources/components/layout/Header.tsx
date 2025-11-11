@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { basePath } from "@/config/build/paths";
+
 import Container from "../atoms/Container";
 import AccountDialog from "../dialogs/AccountDialog";
 import MobileMenu from "./MobileMenu";
@@ -20,7 +22,7 @@ export default function Header() {
                 className="relative w-7 h-8 xl:w-[35px] xl:h-10"
                 href="/token-converter-sources/public"
               >
-                <Image src="/images/logo-short.svg" alt="" fill />
+                <Image src={`${basePath}/images/logo-short.svg`} alt="" fill />
               </Link>
               <Navigation />
             </div>

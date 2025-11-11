@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 
+import { basePath } from "@/config/build/paths";
 import { IconName } from "@/types/IconName";
 
 import Container from "../atoms/Container";
@@ -54,7 +55,7 @@ export default function Footer() {
             <div className="rounded-20 p-1 flex items-center max-sm:justify-between gap-2 bg-primary-bg max-sm:order-1 max-sm:w-full">
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 md:h-8 md:w-8 relative shrink-0">
-                  <Image src={"/images/donut.svg"} alt={""} fill />
+                  <Image src={`${basePath}/images/donut.svg`} alt={""} fill />
                 </div>
                 <p className="max-md:text-12 text-tertiary-text">
                   Donations appreciated:{" "}

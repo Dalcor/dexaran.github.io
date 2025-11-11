@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 
+import { basePath } from "@/config/build/paths";
 import { Standard } from "@/config/standard.config";
 import { clsxMerge } from "@/utils/clsxMerge";
 
@@ -150,7 +151,7 @@ export default function Badge(props: Props) {
       return (
         <Image
           className={className}
-          src={`/images/badges/${badgeImagesMap[standard][color][size]}`}
+          src={`${basePath}/images/badges/${badgeImagesMap[standard][color][size]}`}
           alt={""}
           width={standardBadgeSizes[size].width[standard]}
           height={standardBadgeSizes[size].height}

@@ -18,6 +18,7 @@ import OperationStepRow, {
   OperationStepStatus,
 } from "@/components/molecules/OperationStepRow";
 import { CONVERTER_ADDRESS } from "@/config/addresses.config";
+import { basePath } from "@/config/build/paths";
 import { Standard } from "@/config/standard.config";
 import { useStoreAllowance } from "@/hooks/useAllowance";
 import useConvert from "@/hooks/useConvert";
@@ -166,7 +167,7 @@ export function ReadonlyTokenAmountCard({
         <span>{amount}</span>
         <div className="flex items-center gap-2">
           <Image
-            src={token?.logoURI || "/images/tokens/placeholder.svg"}
+            src={token?.logoURI || `${basePath}/images/tokens/placeholder.svg`}
             alt=""
             width={32}
             height={32}
@@ -322,7 +323,7 @@ export default function ConfirmConvertDialog() {
 
                 <div className="flex justify-center gap-2 mb-2">
                   <Image
-                    src={token?.logoURI || "/images/tokens/placeholder.svg"}
+                    src={token?.logoURI || `${basePath}/images/tokens/placeholder.svg`}
                     alt=""
                     width={24}
                     height={24}

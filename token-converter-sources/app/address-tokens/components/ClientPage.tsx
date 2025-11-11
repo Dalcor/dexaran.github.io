@@ -22,6 +22,7 @@ import Input, { InputSize } from "@/components/atoms/Input";
 import ScrollbarContainer from "@/components/atoms/ScrollbarContainer";
 import TextField, { InputLabel } from "@/components/atoms/TextField";
 import { filterTokens } from "@/components/organisms/PickTokenDialog";
+import { basePath } from "@/config/build/paths";
 import useDerivedTokenInfo from "@/hooks/useDerivedTokenInfo";
 import useTokens from "@/hooks/useTokens";
 import { TwoStandardToken } from "@/types/Token";
@@ -303,7 +304,10 @@ export default function ClientAddressPage() {
           ) : (
             <div className="rounded-3 flex h-[180px] md:h-[340px] items-center justify-center bg-tertiary-bg relative">
               <span className="relative z-10">Added tokens will appear here</span>
-              <img src="/empty-tokens.svg" className="w-[180px] h-[180px] absolute right-0 top-0" />
+              <img
+                src={`${basePath}/empty-tokens.svg`}
+                className="w-[180px] h-[180px] absolute right-0 top-0"
+              />
             </div>
           )}
         </div>

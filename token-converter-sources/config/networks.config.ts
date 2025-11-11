@@ -1,3 +1,5 @@
+import { basePath } from "@/config/build/paths";
+
 export enum DexChainId {
   MAINNET = 1,
 }
@@ -18,6 +20,6 @@ export const networks: Array<{
     chainId: DexChainId.MAINNET,
     name: "Ethereum",
     symbol: "ETH",
-    logo: "/images/chains/ethereum.svg",
+    logo: `${basePath}/images/chains/ethereum.svg`,
   },
 ];

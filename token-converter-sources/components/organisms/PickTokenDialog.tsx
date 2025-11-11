@@ -1,16 +1,12 @@
 import { useVirtualizer } from "@tanstack/react-virtual";
 import clsx from "clsx";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { Address, isAddress } from "viem";
+import { useMemo, useRef, useState } from "react";
 
+import { basePath } from "@/config/build/paths";
 import { Standard } from "@/config/standard.config";
-import { loadChainTokens } from "@/config/tokens";
-import useCurrentChainId from "@/hooks/useCurrentChainId";
-import useDerivedTokenInfo from "@/hooks/useDerivedTokenInfo";
 import useTokens from "@/hooks/useTokens";
 import { useConvertTokensStore } from "@/stores/useConvertTokenStore";
 import { TwoStandardToken } from "@/types/Token";
-import { IIFE } from "@/utils/IIFE";
 
 import DialogHeader from "../atoms/DialogHeader";
 import DrawerDialog from "../atoms/DrawerDialog";
@@ -84,7 +80,7 @@ function TokenRowSimple({
             src={
               currency?.logoURI !== "/tokens/placeholder.svg"
                 ? currency?.logoURI || ""
-                : "/images/tokens/placeholder.svg"
+                : `${basePath}/images/tokens/placeholder.svg`
             }
             alt=""
             className="w-8 h-8"

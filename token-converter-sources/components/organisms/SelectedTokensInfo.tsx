@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { basePath } from "@/config/build/paths";
 import { Standard } from "@/config/standard.config";
 import { TwoStandardToken } from "@/types/Token";
 
@@ -53,7 +54,7 @@ export default function SelectedTokenInfoItem({ token }: { token: TwoStandardTok
         <div className="flex items-center justify-between flex-wrap sm:flex-nowrap flex-grow gap-2">
           <div className="flex items-center gap-2">
             <img
-              src={token.logoURI || "/images/tokens/placeholder.svg"}
+              src={token.logoURI || `${basePath}/images/tokens/placeholder.svg`}
               alt="Ethereum"
               className="flex-shrink-0 w-8 h-8"
             />
