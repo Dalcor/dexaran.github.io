@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[97367,["/token-converter/_next/static/chunks/ff1a16fafef87110.js","/token-converter/_next/static/chunks/e232ebe0de3b2410.js"],"OutletBoundary"]
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/e232ebe0de3b2410.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"_6ojQakd067qrMoLk66A_","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"p-10 text-center","children":["$","h2",null,{"children":"Page not found"}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"zOFXtwKx-dUdZM2n-kNUw","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"p-10 text-center","children":["$","h2",null,{"children":"Page not found"}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null
