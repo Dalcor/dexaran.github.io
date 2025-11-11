@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/dalcor.github.io",
-  assetPrefix: "/dalcor.github.io",
+  basePath: "/token-converter",
+  assetPrefix: "/token-converter",
   /* config options here */
 };
 
