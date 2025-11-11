@@ -35,7 +35,7 @@ const slides = [
           href="https://www.reddit.com/r/0xProject/comments/7lpc5n/ive_sent_my_tokens_to_the_zrx_smart_contract/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col group text-inherit hocus:no-underline hocus:text-inherit"
+          className="flex flex-col group text-inherit hover:no-underline hover:text-inherit"
         >
           <RedditPost
             redditLogo="/posts/post6.png"
@@ -49,7 +49,7 @@ const slides = [
                   onClick={openLinkInNewTab(
                     "https://etherscan.io/address/0xe41d2489571d322189246dafa5ebde1f4699f498#tokentxns",
                   )}
-                  className="text-[#6D8DF4] hocus:underline whitespace-pre-line cursor-pointer"
+                  className="text-[#6D8DF4] hover:underline whitespace-pre-line cursor-pointer"
                 >
                   <span className="hidden xl:inline">
                     {`https://etherscan.io/address/
@@ -71,7 +71,7 @@ const slides = [
           />
           <span
             className={clsx(
-              "text-main-primary whitespace-pre-line group-hocus:underline group-hocus:text-main-primary-hover duration-200",
+              "text-main-primary whitespace-pre-line group-hover:underline group-hover:text-main-primary-hover duration-200",
               "text-[12px] xl:text-[16px] mt-2",
             )}
           >
@@ -86,7 +86,7 @@ const slides = [
           href="https://www.reddit.com/r/ethereum/comments/16bqvj8/4_hours_ago_240k _worth_of_cro_were_deposited_to/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col group text-inherit hocus:no-underline hocus:text-inherit"
+          className="flex flex-col group text-inherit hover:no-underline hocus:text-inherit"
         >
           <RedditPost
             redditLogo="/posts/post4.png"
