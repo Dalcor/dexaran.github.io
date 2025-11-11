@@ -1,5 +1,5 @@
-import ClientPage from "@/app/erc-223/ClientPage";
+import ClientAddressPage from "@/app/address-tokens/components/ClientPage";
 
 export default function HowItWorksPage() {
-  return <ClientPage />;
+  return <ClientAddressPage />;
 }
