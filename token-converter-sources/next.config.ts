@@ -4,7 +4,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: "/token-converter",
   assetPrefix: "/token-converter/",
-  /* config options here */
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
