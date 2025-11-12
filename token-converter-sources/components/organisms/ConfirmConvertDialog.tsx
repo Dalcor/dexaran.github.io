@@ -68,18 +68,18 @@ function composeConvertSteps({
     textMap: getApproveTextMap(assetSymbol || "Unknown"),
   } as const;
 
-  const convertStep = {
-    iconName: "swap",
+  const convertStep: OperationStepConfig = {
+    iconName: "convert",
     pending: ConvertStatus.PENDING_CONVERT,
     loading: ConvertStatus.LOADING_CONVERT,
     error: ConvertStatus.ERROR_CONVERT,
     textMap: {
-      [OperationStepStatus.IDLE]: "Margin swap",
-      [OperationStepStatus.AWAITING_SIGNATURE]: "Margin swap",
-      [OperationStepStatus.LOADING]: "Processing margin swap",
-      [OperationStepStatus.STEP_COMPLETED]: "Margin swap completed",
-      [OperationStepStatus.STEP_FAILED]: "Failed to process margin swap",
-      [OperationStepStatus.OPERATION_COMPLETED]: "Margin swap completed",
+      [OperationStepStatus.IDLE]: "Confirm conversion",
+      [OperationStepStatus.AWAITING_SIGNATURE]: "Confirm conversion",
+      [OperationStepStatus.LOADING]: "Conversion in progress",
+      [OperationStepStatus.STEP_COMPLETED]: "Conversion completed",
+      [OperationStepStatus.STEP_FAILED]: "Conversion failed",
+      [OperationStepStatus.OPERATION_COMPLETED]: "Conversion completed",
     },
   } as const;
 
