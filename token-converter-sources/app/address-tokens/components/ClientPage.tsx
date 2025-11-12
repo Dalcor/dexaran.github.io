@@ -217,9 +217,15 @@ export default function ClientAddressPage() {
             }}
             label="Wallet address"
             placeholder="0x..."
-            tooltipText={"Text"}
+            tooltipText={
+              "Enter the wallet address whose token balances you want to view. All tokens added below will show balances for this wallet, fetched directly from the blockchain in real time."
+            }
           />
-          <InputLabel tooltipText="text1" label="Token name or address" />
+          <InputLabel
+            tooltipText="Search for a token by its name or contract address.
+You’ll see autocomplete suggestions from known tokens or live blockchain search results — click any item to add it to the list below and start tracking its balance."
+            label="Token name or address"
+          />
 
           <div>
             <div className="relative w-full">

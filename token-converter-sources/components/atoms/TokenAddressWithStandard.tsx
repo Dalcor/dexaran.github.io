@@ -30,7 +30,11 @@ export default function TokenAddressWithStandard({
           </div>
         )}
         iconSize={16}
-        text={standard === Standard.ERC20 ? "Text" : "Text"}
+        text={
+          standard === Standard.ERC20
+            ? 'ERC-20 is a token standard on Ethereum network. It specifies the "version" of the token you are going to use.'
+            : 'ERC-223 is an alternative token standard on Ethereum network. It specifies the "version" of the token you are going to use. ERC-223 introduces security improvements and gas optimizations not available with ERC-20.'
+        }
       />
 
       <a

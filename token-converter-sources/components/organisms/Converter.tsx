@@ -11,7 +11,6 @@ import {
   parseUnits,
 } from "viem";
 
-import useNetworkFeeGasValidation from "@/components/gas-settings/hooks/useNetworkFeeGasValidation";
 import { baseFeeMultipliers, SCALING_FACTOR } from "@/config/baseFeeMultipliers";
 import { Standard } from "@/config/standard.config";
 import { useConvertEstimatedGas } from "@/hooks/useConvert";
@@ -53,7 +52,13 @@ function StandardCard({ symbol, standard }: { symbol?: string; standard: Standar
         </span>{" "}
         {symbol}
       </div>
-      <Tooltip text="Text" />
+      <Tooltip
+        text={
+          standard === Standard.ERC20
+            ? 'ERC-20 is a token standard on Ethereum network. It specifies the "version" of the token you are going to use.'
+            : 'ERC-223 is an alternative token standard on Ethereum network. It specifies the "version" of the token you are going to use. ERC-223 introduces security improvements and gas optimizations not available with ERC-20.'
+        }
+      />
     </div>
   );
 }
@@ -333,7 +338,10 @@ export default function Converter() {
             className="w-full min-h-12 flex items-center justify-between px-4 md:px-5 py-2.5  hover:bg-green-bg cursor-pointer duration-200"
           >
             <span className="flex items-center gap-x-2 max-md: flex-wrap">
-              <Tooltip iconSize={20} text="Text" />
+              <Tooltip
+                iconSize={20}
+                text="Network fee is charged when you send any transaction on {networkName} network. It is paid in the networks native currency (i.e. ETH on Ethereum)."
+              />
               <span className="text-secondary-text block mr-1">Network fee</span>
               <div className="flex items-center gap-x-2">
                 <span>{gasPriceCurrency}</span>
